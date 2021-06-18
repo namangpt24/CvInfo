@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            background-color: rgb(243, 14, 14);
+            
+             position: absolute;
+             top:0px;
+             left:0px;
+            height:700px;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 90px 1fr 90px;
+            row-gap: 12px;
+            column-gap: 12px;
+            justify-items: center;
+            
+            /* grid-template-columns: 133px 133px 133px;
+            grid-template-rows: 133px 133px 133px; */
+            /* grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr); */
+             /* 
+             
+              */
+        }
+        .items{
+            background-color: blanchedalmond;
+            height:200px;
+            width:200px;
+            /* align-self: center; */
+            place-self: center;
+        }
+        .item1{
+            /* grid-column-start:1;
+            grid-column-end: 4; */
+            background-color: black;
+            grid-column: 1/span 3;
+            text-align: center;
+            justify-self: center;
+            width:100vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item1">
+        this is the heading!
+    </div>
+    <div class="items">ljasjo</div>
+    <div class="items">jejfewgfbjk</div>
+    <div class="items">jkehhjewgfhvb</div>
+    <div class="item1"> newjkndf</div>
+    
+   
+   </div> 
+   
+</body>
+</html>
